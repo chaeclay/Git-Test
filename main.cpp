@@ -4,19 +4,18 @@
 using namespace std; 
 
 int sum(int n){
-  int total = 1;
+  int total = 0;
   
-  for(int i = 1; i < n; i++){
-    total = i + total;
+  for(int i = 1; i <= n; i++){
+    total = total + i;
   }
-  
   return total;
 }
 
 int product(int n){
   int total = 1;
 
-  for(int i = 1; i < n; i++){
+  for(int i = 1; i <= n; i++){
     total = i * total;
   }
   return total;
